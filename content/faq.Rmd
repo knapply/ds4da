@@ -1,0 +1,32 @@
+---
+title: "FAQ"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    includes:
+      after_body: include/nothing.html
+---
+
+### My organization is interested in receiving training. How can we attend?
+
+See the [Outreach and Education Program](https://my.nps.edu/web/core/courses#Out&Ed) on the [CORE Lab's main site](https://my.nps.edu/web/core/home).
+
+### Do I need a computer?
+
+YES. You absolutely must have access to a computer on which you can install software, download data, etc. In fact, *class meetings* will be a mix of lecture, discussion, and live coding. Students will get the most out of this if they can bring their own laptop to class every day. If this is not possible, we will try to help you work something out.
+
+### What do I need installed on my computer?
+
+* __Data Science for Practitioners__
+    + [_R_](https://cloud.r-project.org/)
+        + The primary tool we will use throughout this course is the R programming language, a freely available language for statistical computing and graphics that runs on Linux, Windows, and MacOS. While R was originally designed as a language targeting statistical analysis, it has grown to be one of the primary open source tools used within the data science domain. 
+    + [_RStudio_](https://rstudio.com/products/rstudio/download/)
+        + We will use RStudio as our interface to the R language. RStudio is a freely available integrated development environment (IDE).
+
+
+### Prerequisites
+
+There are no prerequisites. No previous exposure to programming or data analysis is expected, but would certainly be helpful.
+
+

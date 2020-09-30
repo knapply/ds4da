@@ -1,0 +1,128 @@
+---
+title: "Library"
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r, echo=FALSE}
+init <- tibble::tibble(
+  Name = c(
+    "Hands-On Programming with R",
+    "R for Data Science",
+    "Happy git with R and RStudio",
+    "What They Forgot to Teach You About R",
+    "Advanced R",
+    "R Graphics Cookbook",
+    "ggplot2 book",
+    "R Markdown: The Definitive Guide",
+    "R Markdown Cookbook",
+    "R Packages",
+    "Data Science from Scratch",
+    "Geocomputation with R",
+    "Text Mining with R",
+    "Forecasting: Principles and Practice",
+    "Mastering Shiny"
+  )
+  ,
+  link = c(
+    "https://rstudio-education.github.io/hopr/",
+    "http://r4ds.had.co.nz/",
+    "https://happygitwithr.com",
+    "https://whattheyforgot.org/",
+    "http://adv-r.had.co.nz/",
+    "https://r-graphics.org/",
+    "http://webcat2.library.ubc.ca/vwebv/holdingsInfo?bibId=8489511",
+    "https://bookdown.org/yihui/rmarkdown/",
+    "https://bookdown.org/yihui/rmarkdown-cookbook/",
+    "http://r-pkgs.had.co.nz/",
+    "https://www.oreilly.com/library/view/data-science-from/9781492041122/",
+    "https://geocompr.robinlovelace.net/",
+    "https://tidytextmining.com/",
+    "https://otexts.org/fpp2/",
+    "https://mastering-shiny.org/"
+  )
+  ,
+  Description = c(
+    "An introduction to programming in R for non-programmers",
+    "Covers many of the topics of our coursework.",
+    "Comprehensive guide to setting up version control for your R environment.",
+    "A work-in-progress, this book helps you use R responsibly for data analysis.",
+    "One of the best resources to learn about R as a programming language. It's invaluable if you're coming from another language.",
+    "Contains more than 150 recipes for high-quality visualizations.",
+    "Useful for digging deeper into {ggplot2}.",
+    "Comprehensive resource for everything R Markdown related.",
+    "Practical recipes for using R Markdown",
+    "The de facto guide for developing R packages.",
+    "Learn data science techniques by building your own tools and algorithms from scratch.",
+    "A book on geographic data analysis, visualization and modeling.",
+    "A guide text analysis using tidy data principles",
+    "A comprehensive introduction to forecasting methods for time-series data.",
+    "A companion guide to the Shiny documentation to build web apps in R."
+  )
+  ,
+  Emphasis = c(
+    "Programming",
+    "Data Science",
+    "Version Control",
+    "Data Science",
+    "Programming",
+    "Visualization",
+    "Visualization",
+    "Reporting",
+    "Reporting",
+    "Programming",
+    "Data Science",
+    "Spatial Analysis",
+    "Text Mining",
+    "Forecasting",
+    "App Development"
+  )
+  ,
+  Language = c(
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "R",
+    "Python",
+    "R",
+    "R",
+    "R",
+    "R"
+  )
+  ,
+  `Free?` = c(
+    TRUE,
+    TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,
+    FALSE, TRUE, TRUE, TRUE, TRUE
+  )
+)
+
+init[["Name"]] <- glue::glue('<a href="{init$link}" target="_blank">{init$Name}</a>')
+init$link <- NULL
+init$Emphasis <- factor(init$Emphasis)
+init$`Free?` <- factor(init$`Free?`)
+init$Language <- factor(init$Language)
+
+
+dt <- DT::datatable(
+  init, rownames = FALSE, 
+  escape = FALSE,
+  filter = "top",
+  options = list(
+    dom = "ft",
+    searchHighlight = TRUE,
+    pageLength = nrow(init)
+  )
+)
+
+widgetframe::frameWidget(dt, height = "auto")
+```
+
+

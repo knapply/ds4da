@@ -1,0 +1,17 @@
+---
+title: "Code"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 2
+---
+
+
+## Social Media
+
+### [`{rtweet}`](https://github.com/ropensci/rtweet)
+
+R client for accessing Twitter’s REST and stream APIs.
+

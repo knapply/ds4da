@@ -1,0 +1,43 @@
+---
+title: "Data Carpentry Course"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 2
+---
+
+## Day 1: Foundation
+
+* Systems Check
+* RStudio Orientation
+* Basic Syntax
+* Project Organization
+
+## Day 2: Data Analysis I
+
+* I/O
+* Data Frames
+* Visualization Fundamentals
+
+## Day 3: Data Analysis II
+
+* Strings and Regular Expressions
+* Dates and Times
+* Relational Data
+* Spatial Data
+
+## Day 4: Programming
+
+* Data Types
+* Control Structures
+* Iteration
+* Functions
+
+## Day 5: Data in the Wild
+
+* Graph Data and Networks
+* Circle Back
+  + What did we miss?
+  + What do we need review?

@@ -15,7 +15,7 @@ title = "Data Carpentry Course"
 [[feature]]
   icon = "book"
   icon_pack = "fas"
-  name = "[Textbook](https://knapply.github.io/ds4da-cookbook/)"
+  name = "[Textbook](https://knapply.github.io/data-carpentry/)"
   description = ""
   
 [[feature]]
